@@ -1,0 +1,87 @@
+.csinglecard-container {
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    float: left;
+    height: 45rem;
+    width: 40rem;
+    padding: 25px;
+    border: 2px rgba(26, 176, 61, 0.349)solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(191, 246, 207);
+
+}
+
+ h2 {
+    text-transform: uppercase;
+    color: rgb(0, 100, 128);
+    text-align: center;
+    font-weight: bold;
+}
+
+.csingle-cardcontent {
+    padding: 2rem;
+
+}
+
+.csingle-cardcontent ul {
+  
+    font-size: medium;
+    font-weight: 500;
+}
+
+.csingle-cardcontent ul li {
+    line-height: 3rem;
+    color: rgb(38, 91, 110);
+}
+
+.single-cardcontent ul i {
+    color: rgba(0, 100, 128, 0.742);
+}
+
+.ccard-button {
+
+    float: left;
+    margin-left: 42px;
+    align-items: baseline;
+    width: 15rem;
+    color: white;
+    background-color: #11ac0c;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+
+}
+
+.ccard-button:hover {
+    background-color:  #1c9118;
+}
+
+@media screen and (max-width: 360px) {
+    .csinglecard-container {
+        height: 40rem;
+        width: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .csingle-cardcontent ul {
+        font-weight: 450;
+
+    }
+
+    .csingle-cardcontent ul li {
+        line-height: 2.4rem;
+    }
+
+    .ccard-button {
+        width: 10rem;
+        margin-left: 30px;
+        margin-top: 0px;
+
+    }
+}

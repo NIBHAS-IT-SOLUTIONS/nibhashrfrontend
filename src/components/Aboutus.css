@@ -1,0 +1,117 @@
+.about-us h1 {
+    margin: 0;
+    padding: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+   
+    background: #002141;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.about-container {
+    display: flex;
+    background-color: rgb(26, 141, 176);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8rem;
+}
+
+.about-card {
+    background-color: #ffffff1f;
+    backdrop-filter: blur(20px);
+    width: 1000px;
+    height: 400px;
+    border: 20px solid rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.291);
+    margin: 20px;
+
+}
+
+.about-content h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-content {
+    padding: 16px;
+}
+
+@media (min-width:360px) and (max-width:719px) {
+    .about-card {
+        margin: auto;
+        width: 360px;
+        height: 700px;
+    }
+
+    .about-content h4 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* .about-title {
+    height: 11rem;
+    text-align: center;
+    color: #fff;
+    background-color: #002141;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-top: 10rem;
+ 
+
+}
+
+.about {
+    padding: 200px;
+    background: #002141;
+
+}
+
+.about-card {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding-left: 50px;
+    max-width: 500px;
+    min-height: 200px;
+    align-items: center;
+    max-width: 800px;
+    height: 300px;
+    padding: 35px;
+  
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.104);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.262);
+
+
+    backdrop-filter: blur(35px);
+}
+
+.about-card p {
+
+    line-height: 4rem;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  
+}
+@media (min-width:360px) and (max-width:719px){
+    .about-card p{
+        font-size:1.1rem ;
+       
+    }
+    .about-card{
+       margin: auto;
+        height: 450px;
+        width: 100%;
+    }
+} */

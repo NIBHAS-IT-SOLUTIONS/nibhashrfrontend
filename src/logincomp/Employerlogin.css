@@ -1,0 +1,115 @@
+.login-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    max-width: 700px;
+
+    width: 100%;
+    background-color: #ffffff;
+
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.405);
+}
+
+.input-box {
+
+    margin-bottom: 25px;
+    width: calc(100% / 1 - 20px);
+}
+
+.input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #1A8DB0;
+}
+
+.buttons {
+
+    height: 45px;
+    margin: 35px;
+    text-align: center;
+}
+
+.buttons input {
+    height: 100%;
+    width: 50%;
+
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #1A8DB0, #002141);
+}
+
+.buttons input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #1A8DB0, #002141);
+}
+
+
+.buttons2 {
+
+    height: 45px;
+    margin:auto;
+    text-align: center;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .buttons2 {
+        
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.buttons2 input {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #b01a1a, #956703);
+}
+
+.buttons2 input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #b01a1a, #956703);
+}
+@media (min-width: 360px) {
+    .buttons2 input {
+
+        width: auto;
+        height: 45px;
+        padding: 10px;
+    }
+   
+}

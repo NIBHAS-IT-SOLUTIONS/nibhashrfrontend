@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(192, 187, 187);
+  text-decoration: none;
+}
+
+.nav {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+  background: rgb(0, 33, 65);
+
+}
+
+.nav__brand {
+
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 6rem;
+}
+
+.nav__toggler {
+
+  display: none;
+}
+
+.nav__toggler div {
+
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+.employer-loginbutton{
+  width:15rem;
+  padding: 1rem;
+  background-color: #1A8DB0;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+
+}
+.candidate-loginbutton{
+   
+  width:15rem;
+  padding: 1rem;
+  background-color: #1A8DB0;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  
+}
+.employer-loginbutton1{
+  font-size: x-large;
+  
+}
+.backtohomebutton{
+  width: 16rem;
+  background-color: #1A8DB0;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem;
+}
+.backtohomebutton:hover{
+  background-color: #1a8db0e3;
+}
+.candidate-loginbutton:hover ,
+.employer-loginbutton:hover{
+  background-color: #1a8db0e3;
+  
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .employer-loginbutton ,.candidate-loginbutton {
+    width: 8rem;
+    padding: .8rem;
+    height: 5rem;
+    font-size: small;
+
+    
+}}
+
+@media screen and (max-width: 768px) {
+
+  .nav__toggler {
+
+    z-index: 1000;
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .nav__menu {
+
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vw;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+
+  .nav__brand {
+    font-size: large;
+  }
+  .backtohomebutton{
+    width: 10rem;
+   height: 7rem;
+    color: white;
+    border-radius: 30px;
+    border: none;
+   
+  }
+}
+
+/* Active Class */
+.nav__active {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
