@@ -75,14 +75,14 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/' >
       {/* <UserContext.Provider value={{userData,setUserData}}> */}
       <Routes>
       
         {/* <Route path='login' element={<><Loginheader/><Employerlogin /> <Loginfooter/></>} /> */}
         {/* <Videopage/> */}
 
-          <Route path='/' element={<><Header /><Content /> <Showvacancies/> <Aboutus /> <More />  <Reviews /> <Forms /> <Footer /> </>} />
+          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Reviews /> <Forms /> <Footer /> </>} />
 
           <Route path='/vacancies' element={<><Loginheader /><Showvacancies/> </>} />
           <Route path="applyvacancy/:id" element={<><Loginheader /> <Applyvacancy/></>} />
