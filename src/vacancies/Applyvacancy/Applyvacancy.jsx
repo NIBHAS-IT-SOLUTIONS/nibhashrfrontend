@@ -10,7 +10,7 @@ function Applyvacancy() {
   const form = useRef();
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
-  const [filename, setfilename] = useState('');
+  const [filename, setfilename] = useState('Choose File');
 
   const navigate = useNavigate();
   const { id } = useParams()
@@ -84,7 +84,8 @@ function Applyvacancy() {
           () => {
             console.log('SUCCESS!');
   
-            window.alert("Message Sent");
+            window.alert("We will Contact you ASAP");
+            navigate("/vacancies");
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -105,17 +106,18 @@ function Applyvacancy() {
 
   return (
     <>
-
-      <div class="row ml-10 ">
+<div className="apply">
+      <div class="row mx-auto">
         <div class="col-sm-5">
           <div class="card w-100 text-center ">
             <div class="card-body">
-              <h1 class="card-title">{vacancy.jobtitle}  {vacancy.department}</h1>
+              <h1 class="card-title text text-info">{vacancy.jobtitle} <br /></h1>
+              <h3 class="card-title text-dark">{vacancy.department}</h3>
               <br />
 
 
 
-              <table class="table-striped" style={{ marginLeft: '25%',marginLeft: '25%', width: '50%', border: 'none', borderSpacing: '40px' }}>
+              <table class="table-striped" style={{ margin:'auto', width: '80%', border: 'none', borderSpacing: '40px' ,textalign:"left" }}>
                 <thead>
                   <tr>
 
@@ -156,16 +158,15 @@ function Applyvacancy() {
                     <th scope="row">Date Posted</th>
                     <td>{vacancy.postdate}</td>
                   </tr>
+                  
 
 
                 </tbody>
               </table>
-
-
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-7">
           <div class="card w-100">
             <div class="card-body">
               <h1 class="card-title"></h1><br />
@@ -174,13 +175,13 @@ function Applyvacancy() {
               <form ref={form} onSubmit={onSubmit}>
 
 
-                <div class="input-group input-group-lg mb-3">
+                <div class="input-group input-group-lg mb-4">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-lg">Name</span>
                   </div>
                   <input id="from_name" required value={data.from_name} onChange={handleInputChange} name='from_name' type="text" placeholder="Name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" />
                 </div>
-                <div class="input-group input-group-lg mb-3">
+                <div class="input-group input-group-lg mb-4">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
                   </div>
@@ -194,7 +195,7 @@ function Applyvacancy() {
                     class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" />
                 </div>
 
-                <div class="input-group input-group-lg mb-3">
+                <div class="input-group input-group-lg mb-4">
                   <div class="input-group-prepend">
                     <span class="input-group-text">Resume</span>
                   </div>
@@ -212,11 +213,12 @@ function Applyvacancy() {
                 <small>Only PDF, DOC, and DOCX files are allowed.</small>
                 <br /><br /><br />
 
-                <button type="submit" class="btn btn-dark btn-lg btn-block">Submit</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
               </form>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   )

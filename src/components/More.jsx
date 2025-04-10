@@ -31,23 +31,7 @@ function More() {
         </div>
     </div>
 
-    <div className="card">
-        <img src="https://i.postimg.cc/Wb1vN6mb/TRAINING.jpg" alt="" />
-        <div className="card-content">
-            <h3>JOB INTERVIEW TRAINING PROGRAMME</h3>
-           <br />
-            <h4>Our job interview training programs often include mock interviews, feedback sessions, and personalized coaching to help individuals build confidence and improve their interview performance.</h4>
-        </div>
-    </div>
-
-    <div className="card">
-        <img src="https://i.postimg.cc/sXcbfzqr/MARKETING.jpg" alt="" />
-        <div className="card-content">
-            <h3>DIGITAL MARKETING</h3>
-           <br />
-            <h4>We don't just execute campaigns; we craft strategic journeys. Our team of digital experts combines creativity with data-driven insights to develop tailored strategies that resonate with your audience.</h4>
-        </div>
-    </div>
+    
 
 </div>
    

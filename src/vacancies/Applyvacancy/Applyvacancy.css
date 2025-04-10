@@ -1,22 +1,27 @@
-.parent {
-    padding-top: 6rem;
-    text-align: center;
-    overflow-x: hidden;
-}
 th, td {
     padding: 10px;
   }
+  .parent {
+    padding-top: 6rem;
+    text-align: center;
+    overflow-x: hidden;
+    border-radius: 0px;
+}
+.apply{
+    background-color: #38383816;
+    padding: 2%;
+}
 
 .child1 {
     width: 60%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle;object-fit: cover;
 }
 
 .child1 img {
     width: 100%;
     height: 620px;
-
+    border-radius: 0px;
 }
 
 .child2 {
@@ -26,6 +31,7 @@ th, td {
     padding: 28rem 20rem;
     height: 620px;
     vertical-align: middle;
+    border-radius: 0px;
 }
 
 .child2 .forms input {
@@ -44,7 +50,7 @@ th, td {
     /* display: inline-block; */
     /* background-color: rgba(47, 47, 51, 0.77); */
     height: auto;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .form input {
@@ -58,28 +64,20 @@ th, td {
 
 .form h1 {
     color: #fff;
-
+    font-size: 20px;
     text-align: center;
 }
 
-select {
-    color: #073340;
-    border-radius: 5px;
-    align-items: center;
-    margin-left: 0px;
-    padding: 1.2rem;
-
-}
 
 
 .input-container {
     padding-top: 5rem;
     padding: 10px;
-
+    font-size: 1.5rem;
 }
 
 .message-box textarea {
-    padding: 1.8rem;
+    padding: .8rem;
     border-radius: 5px;
     resize: vertical;
 }
@@ -89,7 +87,7 @@ select {
     margin-top: 2rem;
     background-color: #fff;
     font-size: large;
-    margin-left: 11px;
+    margin-left: 22%;
     border: none;
     width: 20rem;
     border-radius: 30px;
@@ -99,26 +97,42 @@ select {
 .contact-heading h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
  
-   padding: 7rem;
+   padding: 0rem;
     color: #000;
    margin-top: 5rem;
    
 }
-
-@media(min-width:360px) and (max-width:1350px) {
+.table-striped{
+    margin:'auto';
+    width: '80%'; 
+    border: 'none';
+    border-spacing: '40px' ;
+    text-align:center;
+}
+@media(min-width:360px) and (max-width:719px) {
+    .apply{
+        background-color: #38383816;
+        padding: 0%;
+    }
     .child2 {
         align-items: center;
         height: 600px;
         width: 150px;
+       border-radius:  0px 0px 10px 10px;
 
+    }
+    .child1{
+        align-items: flex-start;
     }
 
     .child1 img {
-        width: 250px;
+        border-radius: 10px 10px 0px 0px;
+        margin-left: -31.5%;
+        width: 400px;
         height: 280px;
-
+        object-fit: fill;
     }
 
     .form {
@@ -138,5 +152,16 @@ select {
     .form h1 {
         width: 270px;
         height: 35px;
+    }
+    .form button {
+        color: green;
+        margin-top: 2rem;
+        background-color: #fff;
+        font-size: large;
+        margin-left: 35px;
+        border: none;
+        width: 20rem;
+        border-radius: 30px;
+        padding: .5rem;
     }
 }

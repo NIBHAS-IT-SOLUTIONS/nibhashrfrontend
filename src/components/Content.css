@@ -42,7 +42,7 @@ height: 10px;
     font-family: 'Anton', sans-serif;
     color: #dbdb10;
 }
-@media (min-width:360px) and (max-width:719px){
+/* @media (min-width:360px) and (max-width:719px){
 
  
     .carcaption{
@@ -52,6 +52,17 @@ height: 10px;
     .carcaption .so{
         font-size: 3rem;
     }
-}
+} */
+@media (max-width: 719px) {
+    .carousel-item img {
+      height: 45vh !important;
+    }
+    .carcaption{
+        font-size: 3rem;
 
+    }
+    .carcaption .so{
+        font-size: 3rem;
+    }
+  }
 

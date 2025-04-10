@@ -12,13 +12,12 @@ function Footer() {
           <div class="pages">
             <ul>
 
-              <li><a href="#">   Home</a></li>
-              <li><a href="#about">  About</a></li>
-              <li><a href="#service">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/#home">   Home</a></li>
+              <li><a href="/#about">  About</a></li>
+              <li><a href="/#service">Services</a></li>
+              <li><a href="/vacancies">Vacancies</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
-
-
 
           </div>
 
@@ -30,7 +29,7 @@ function Footer() {
             <h3>Keep In Touch</h3>
             <div class="social">
 
-              <a href="#"> <i class="fa-regular fa-envelope"></i> </a>
+              <a href="mailto:nibhashrdsolutions@gmail.com"> <i class="fa-regular fa-envelope"></i> </a>
 
               <a href="https://www.facebook.com/profile.php?id=100088368601664"><i class="fab fa-facebook" ></i> </a>
 
@@ -64,19 +63,23 @@ function Footer() {
 
           <div className='numb'>
             <li>
-              <i class="fa-solid fa-phone-volume"> +91 80-86-22-00-07</i>
+            <a href='tel:+91808609220007'>
+            <i class="fa-solid fa-phone-volume"> +91 80-86-22-00-07</i>
+            </a>              
             </li>
             <li>
-              <i class="fa-solid fa-phone-volume"> +91 80-86-09-48-84</i>
+            <a href='tel:+918086094884'>
+            <i class="fa-solid fa-phone-volume">+91 80-86-09-48-84</i>
+            </a>              
             </li>
             <br />
             <li>
-            <i class="fa-regular fa-envelope"></i> <a href='#'  className='mailid'> info@nibhashr.com</a>
+            <i class="fa-regular fa-envelope"></i> <a href='mailto:info@nibhashr.com'  className='mailid'> info@nibhashr.com</a>
             </li>
             <li>
-            <i class="fa-regular fa-envelope"></i> <a href='#'  className='mailid'> cv.nibhashrdsolutions@gmail.com</a>
+            <i class="fa-regular fa-envelope"></i> <a href='mailto:cv.nibhashrdsolutions@gmail.com'  className='mailid'> cv.nibhashrdsolutions@gmail.com</a>
             </li><li>
-            <i class="fa-regular fa-envelope"></i> <a href='#'  className='mailid'> nibhashrdsolutions@gmail.com</a>
+            <i class="fa-regular fa-envelope"></i> <a href='mailto:nibhashrdsolutions@gmail.com'  className='mailid'> nibhashrdsolutions@gmail.com</a>
             </li>
           </div>
 
@@ -87,7 +90,7 @@ function Footer() {
           {/* <div class="legal">
             <a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a>
           </div> */}
-          <div class="copyright">2024 Copyright &copy; Nibhas HRD Solutions</div>
+          <div class="copyright">2024 Copyright &copy; Nibhas HRD Solutions Pvt Ltd</div>
         </div>
 
       </footer>

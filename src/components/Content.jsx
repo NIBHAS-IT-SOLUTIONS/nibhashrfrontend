@@ -5,22 +5,22 @@ import Carousel from 'react-bootstrap/Carousel';
 // import Docimage from '../Images/DOCTOR.jpg'
 // import Itimage from '../Images/IT WORK.jpg'
 // import Nibhas from '../Images/NIBHAS.png'
-
+import Carousel1  from '../images/nibhas hr.png';
 
 
 function Content() {
   return (
     <>
-   
-      <Carousel data-bs-theme="dark">
-
-      <Carousel.Item>
+       {/* <Carousel.Item>
           <img style={{ height: '80vh' }}
             className="d-block w-100"
-            src="https://i.postimg.cc/zfrQT4Sc/NIBHAS.png"
+            src={Carousel1}
             alt="First slide"
           />
-        </Carousel.Item>
+        </Carousel.Item> */}
+      <Carousel data-bs-theme="dark">
+
+  
 
         <Carousel.Item>
           <img style={{ height: '80vh' }}
@@ -44,7 +44,7 @@ function Content() {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h1 className='carcaption'>'SAY GOODBYE TO UNEMPLOYMENT' <br /> WE CAN MAKE <span className='you'>YOUR FUTURE</span> BETTER </h1>
+            <h2 className='carcaption'>'SAY GOODBYE TO UNEMPLOYMENT' <br /> WE CAN MAKE <span className='you'>YOUR FUTURE</span> BETTER </h2>
             <p className='since'>AS A PLACEMENT AGENCY</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -55,13 +55,14 @@ function Content() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h1 className='carcaption'>'ACHIEVE YOUR <span className='dream'>DREAMS</span> WITH US'</h1>
+            <h2 className='carcaption'>'ACHIEVE YOUR <span className='dream'>DREAMS</span> WITH US'</h2>
             <p className='since'>
              NIBHAS IT SOLUTIONS
             </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <br /><br />
     </>
   );
 }

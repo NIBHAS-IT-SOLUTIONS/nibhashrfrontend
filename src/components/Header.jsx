@@ -2,6 +2,7 @@ import React, { useState,useContext,useEffect } from 'react'
 import './Header.css'
 import { Link, useNavigate } from 'react-router-dom';
 // import nibh from '../Images/nibhas-logo.jpg'
+import nibhaslogo from '../images/nibhashrdnobg.png'
 import UserContext from '../auth/UserContext'
 function Header() {
   const navigate =useNavigate();
@@ -23,35 +24,36 @@ function Header() {
     }
     return (
         <>
-          <nav className="nav">
-      <a href="/" className="nav__brand">
+          <nav className="nav" style={{backgroundColor:'white',color:"#2B53A1"}}>
+      <a href="/" style={{Color:'#2B53A1'}} className="nav__brand">
+      <img src={nibhaslogo} alt="" width="100"/>
         Nibhas HRD Solutions
       </a>
       
-      <ul className={active}>
+      <ul  style={{Color:'#2B53A1'}} className={active}>
         <li className="nav__item">
-          <a href="#home"  className="nav__link">
+          <a href="/#home"  className="nav__link">
             Home
           </a>
         </li>
+        
         <li className="nav__item">
-          <Link to='vacancies'  className="nav__link">
-            Vacancies
-          </Link>
-        </li>
-        <li className="nav__item">
-          <a href="#about" className="nav__link">
+          <a href="/#about" className="nav__link">
             About
           </a>
         </li>
         <li className="nav__item">
-          <a href="#service"  className="nav__link">
+          <a href="/#service"  className="nav__link">
             Services
           </a>
         </li>
-      
         <li className="nav__item">
-          <a href="#contact"  className="nav__link">
+          <Link to='/vacancies'  className="nav__link">
+            Vacancies
+          </Link>
+        </li>
+        <li className="nav__item">
+          <a href="/#contact"  className="nav__link">
             Contact
           </a>
         </li>

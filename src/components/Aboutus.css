@@ -1,27 +1,31 @@
-.about-us h1 {
+.about-us{
+     background:center url('../images/shakehand.png') ;
+}
+.about-us h2 {
     margin: 0;
     padding: 6rem;
     text-transform: uppercase;
     text-align: center;
-   
-    background: #002141;
-    color: #fff;
-    font-size: 3rem;
+   font-weight: bolder;
+    /* background: #fefefe; */
+    color: #000000;
+    font-size: 4rem;
 }
 
 .about-container {
     display: flex;
-    background-color: rgb(26, 141, 176);
+   
+    /* background-color: #2B53A1; */
     justify-content: center;
     flex-wrap: wrap;
     padding: 8rem;
 }
 
 .about-card {
-    background-color: #ffffff1f;
-    backdrop-filter: blur(20px);
-    width: 1000px;
-    height: 400px;
+    background-color: #00000068;
+    backdrop-filter: blur(5px);
+    width: 50%;
+    height: 20%;
     border: 20px solid rgba(255, 255, 255, 0);
     border-radius: 8px;
     overflow: hidden;
@@ -30,11 +34,19 @@
 
 }
 
-.about-content h4 {
+.about-content h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-content h5 {
     text-align: center;
     color: #fff;
     font-size: 20px;
     line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .about-content {
@@ -44,13 +56,17 @@
 @media (min-width:360px) and (max-width:719px) {
     .about-card {
         margin: auto;
-        width: 360px;
+        width: 460px;
         height: 700px;
+        padding: 0;
     }
 
     .about-content h4 {
         font-size: 16px;
     }
+.about-container {
+    padding: 0;
+}
 }
 
 

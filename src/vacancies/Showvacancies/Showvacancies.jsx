@@ -7,9 +7,6 @@ import './Showvacancies.css'
 
 function Showvacancies() {
 
-
-
-
   const [vacancies, setvacancies] = useState([])
   const [count, setCount] = useState(0);
   const [jobnamesearch, setjobnamesearch] = useState(false)
@@ -114,7 +111,12 @@ function Showvacancies() {
 
   return (
     <>
-
+  <div className="vaccancies">
+  <br /><br />
+  <div class="d-flex justify-content-center mx-auto py-auto">
+   
+             <h1 class="text-dark">Search For Your vacancies</h1>
+          </div>
       {
         jobnamesearch ?
           <>
@@ -200,8 +202,10 @@ function Showvacancies() {
 
 
 
-      <div class="row row-cols-1 row-cols-md-4 mt-5 g-4">
+      <div class="row row-cols-1 row-cols-md-4 mx-auto mt-5 g-4">
+       
         {
+          vacancies.length > 0 ?
           vacancies.map((vacancy) => {
             return (
               <div class="col mb-5 " >
@@ -222,22 +226,28 @@ function Showvacancies() {
                   </div>
                   <div class="card-footer ">
 
-                    <div class="d-grid gap-3">
+                    <div class="d-grid gap-2">
                       <Link class="btn btn-outline-dark col-12 mx-auto" to={`/applyvacancy/${vacancy._id}`}><h3>Apply for this Job</h3></Link>
 
                     </div>
 
                   </div>
                 </div>
+               
               </div>
             )
           })
+          :
+          <div class="d-flex justify-content-center mx-auto">
+             <h1 class="text-primary">No Vacancies Available</h1>
+             <br /><br /><br />
+          </div>
+         
         }
 
 
-
       </div>
-
+</div>
     </>
   )
 }

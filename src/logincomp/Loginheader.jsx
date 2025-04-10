@@ -29,7 +29,7 @@ const backtohome=()=>{
         <>
           <nav className="nav">
       <a href="/" className="nav__brand">
-        Nibhas HRD Solutions
+        Nibhas HRD Solutions Private Limited
       </a>
       {/* {
         cname &&

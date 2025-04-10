@@ -5,8 +5,9 @@ function Aboutus() {
         <>
 
             <div className='about-us' id='about'>
-                <h1>About us</h1>
-            </div>
+                
+                <h2>About us</h2>
+            
             <div className='about-container'>
 
                 <div className="about-card">
@@ -14,16 +15,18 @@ function Aboutus() {
                     <div className="about-content">
 
                         <br />
-                        <h4>Welcome to <strong>Nibhas HRD Solutions</strong>,<br /> <br /> As a leading placement agency,
-                            we take pride in revolutionizing the hiring experience for both employers and job seekers.We have helped many professionals to have a successful career
+                        <h3>Welcome to <strong>Nibhas HRD Solutions</strong></h3>,<br /> <br /> 
+                         <h5> As a leading placement agency,  we take pride in revolutionizing the hiring experience for both employers and job seekers.We have helped many professionals to have a successful career
                             in Healthcare, Engineering Information Technology, Finance, Accounting, Construction, Hospitality, 
-                              Administration, Management, Sales & Marketing, Marketing Research and many more.And our team consists of seasoned web developers and digital marketing specialists who stay ahead of industry trends and technologies.
-                        </h4>
+                              Administration, Management, Sales & Marketing, Marketing Research and many more </h5>
+                              <br />
+                              <h5> And our team consists of seasoned web developers and digital marketing specialists who stay ahead of industry trends and technologies.
+                        </h5>
                     </div>
                 </div>
 
             </div>
-
+            </div>
             {/* <div className='about-title'>About</div>
             <div className='about'>
             <div class="about-card">

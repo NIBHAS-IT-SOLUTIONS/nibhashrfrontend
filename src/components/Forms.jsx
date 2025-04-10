@@ -1,19 +1,19 @@
-import React, { useRef ,useState} from 'react'
-import './Forms.css'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 import { baseURL } from '../constants/constants';
-
+import './Forms.css'
 function Forms() {
   const form = useRef();
 
   const [data, setData] = useState({
     from_name: "",
     frommail: "",
-    phone:"",
-    message:"",
-    service:""
+    phone: "",
+    message: "",
+    service: ""
   });
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setData((prevProps) => ({
@@ -21,11 +21,12 @@ function Forms() {
       [name]: value
     }));
   };
-  const sendEmail = async(event) => {
+
+  const sendEmail = async (event) => {
     event.preventDefault();
     console.log(form.current);
     emailjs
-      .sendForm('service_c3oh2p4', 'template_ndajx56', form.current, {
+      .sendForm('service_c3oh2p4', 'template_5ppfh5y', form.current, {
         publicKey: 'IqgHhEqtlLJn6Dp7x',
       })
       .then(
@@ -38,83 +39,91 @@ function Forms() {
           console.log('FAILED...', error.text);
         },
       );
-      try {
-       await axios.post(`${baseURL}`, {data} )
+    try {
+      await axios.post(`${baseURL}`, { data })
         .then((res) => { console.log("done"); });
-      
-      }
-      catch (error) {
-        console.log(error);
-      }
-      
 
+    }
+    catch (error) {
+      console.log(error);
+    }
+  
 
   };
 
   return (
     <>
-      <div className='contact-heading'>
+      <div className='contact-heading'id="contact">
         <h1>Contact</h1>
       </div>
 
+      <div className="parent" >
+  <div className="child1">
+    <img src="https://i.postimg.cc/rF1CMLXG/5754850-2975414.jpg" alt="Contact Illustration" />
+  </div>
 
-      <div className="parent" id='contact'>
-        <div className="child1">
-          <img src="https://i.postimg.cc/rF1CMLXG/5754850-2975414.jpg" alt="" />
+  <div className="child2">
+    <div className="form">
+      <form ref={form} onSubmit={sendEmail}>
+        <h1>We'd Love to Hear From You</h1>
+
+        <div className="input-container">
+          <input
+            required
+            id="from_name"
+            name="from_name"
+            type="text"
+            placeholder="Name"
+            value={data.from_name}
+            onChange={handleInputChange}
+          />
         </div>
-        <div className="child2">
-          <div class="form">
-            <form ref={form} onSubmit={sendEmail}>
 
-
-              <h1>Fill out the form</h1>
-
-              <div class="input-container">
-                <input id="from_name" required value={data.from_name} onChange={handleInputChange} name='from_name' class="input" type="text" placeholder="Name" />
-
-              </div>
-
-              <div class="input-container">
-                <input id="email" required  value={data.frommail} onChange={handleInputChange} name='frommail' class="input" type="mail" placeholder="Email" />
-              </div>
-
-              <div class="input-container">
-                <input  required value={data.phone} onChange={handleInputChange} class="input" name='phone' type="phone" placeholder="Number" />
-              </div>
-
-              <div className='message-box'>
-                <textarea required value={data.message} onChange={handleInputChange} name="message" id="" cols="30" rows="4" placeholder='Message'></textarea>
-              </div>
-
-              <div className='dropdown'>
-                <select name='service' value={data.service} required onChange={handleInputChange}>
-                  <option value="">Select the service you want !</option>
-                  <option value="DOCTOR'S PLACEMENT SERVICE">DOCTOR'S PLACEMENT SERVICE</option>
-                  <option value="PLACEMENT SERVICE">PLACEMENT SERVICE</option>
-                  <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
-                  <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
-
-                </select>
-              </div>
-
-
-
-
-
-              {/* <div className="input-container">
-      <input type="file" name="myfile"/>
-      </div> */}
-
-              <button  type="submit" class="submit">Send</button>
-            </form>
-
-          </div>
+        <div className="input-container">
+          <input
+            required
+            id="email"
+            name="frommail"
+            type="email"
+            placeholder="Email"
+            value={data.frommail}
+            onChange={handleInputChange}
+          />
         </div>
-      </div>
+
+        <div className="input-container">
+          <input
+            required
+            name="phone"
+            type="tel"
+            placeholder="Phone Number"
+            value={data.phone}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <div className="message-box">
+          <textarea
+            required
+            name="message"
+            placeholder="Message"
+            rows="4"
+            cols="40"
+            value={data.message}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <button className='btn btn-primary btn-lg btn-block' type="submit" >Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
     </>
 
-  )
+              )
 }
 
-export default Forms
+              export default Forms;

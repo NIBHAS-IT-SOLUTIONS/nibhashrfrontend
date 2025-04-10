@@ -1,4 +1,8 @@
-
+.vaccancies{
+ min-height: 80%;
+ background-color: #38383816;
+ padding: 2%;
+}
   #rangeValue {
 	position: relative;
 	display: block;
@@ -258,4 +262,11 @@ form #debt-amount-slider::before {
     opacity: 1;
     margin-right: 12px;
   }
+}
+@media (max-width: 719px) {
+  .vaccancies{
+    min-height: 80%;
+    background-color: #38383816;
+    padding: 0%;
+   }
 }

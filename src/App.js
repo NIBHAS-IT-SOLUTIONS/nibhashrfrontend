@@ -10,9 +10,7 @@ import Forms from './components/Forms';
 import Reviews from './components/Reviews';
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Loginfooter from './logincomp/Loginfooter';
-import Employerlogin from './logincomp/Employerlogin';
-import Register from './logincomp/Register';
+
 import Jobpost from './jobpostcomp/Jobpost';
 //import axios from 'axios';
 import UserContext from './auth/UserContext';
@@ -23,73 +21,85 @@ import Cfooter from './candidatecomp/Cfooter';
 import Cregister from './candidatecomp/Cregister';
 import Clogin from './candidatecomp/Clogin';
 import Capply from './candidatecomp/Capply';
-import Videopage from './components/Videopage';
 import { baseURL } from './constants/constants';
 import Showvacancies from './vacancies/Showvacancies/Showvacancies';
 import Applyvacancy from './vacancies/Applyvacancy/Applyvacancy';
+
 
 //import Chome from './candidatecomp/chome';
 
 
 function App() {
-//  const user=useContext(UserContext)
- 
-//   const [userData,setUserData]=useState({
-//     id:undefined,
-//     user:undefined
-//   })
- 
-//   const userid=localStorage.getItem("loginid")?localStorage.getItem("loginid"):localStorage.getItem("candid")
+  //  const user=useContext(UserContext)
 
-// console.log(userid);
-// const loggeduserdata=async()=>{
-//   const userid=localStorage.getItem("loginid")
-//   //console.log(userid);
-//   const candid=localStorage.getItem("candid")
-//   if(userid){
-//     const userid=localStorage.getItem("loginid")
-//   const loggeduser=await axios.get(`${baseURL}getuser/${userid}`)
-//    // console.log(loggeduser.data.user);
-//     setUserData({
-//       id:userid,
-//       user:loggeduser.data.user
-//     })}
-//     if(candid){
-//       const candid=localStorage.getItem("candid")
-//       const loggeduser=await axios.get(`${baseURL}getcandidate/${candid}`)
-//        // console.log(loggeduser.data.user);
-//         setUserData({
-//           id:userid,
-//           user:loggeduser.data.user
-//         })}
-//    // console.log(userData);
-// }
+  //   const [userData,setUserData]=useState({
+  //     id:undefined,
+  //     user:undefined
+  //   })
+
+  //   const userid=localStorage.getItem("loginid")?localStorage.getItem("loginid"):localStorage.getItem("candid")
+
+  // console.log(userid);
+  // const loggeduserdata=async()=>{
+  //   const userid=localStorage.getItem("loginid")
+  //   //console.log(userid);
+  //   const candid=localStorage.getItem("candid")
+  //   if(userid){
+  //     const userid=localStorage.getItem("loginid")
+  //   const loggeduser=await axios.get(`${baseURL}getuser/${userid}`)
+  //    // console.log(loggeduser.data.user);
+  //     setUserData({
+  //       id:userid,
+  //       user:loggeduser.data.user
+  //     })}
+  //     if(candid){
+  //       const candid=localStorage.getItem("candid")
+  //       const loggeduser=await axios.get(`${baseURL}getcandidate/${candid}`)
+  //        // console.log(loggeduser.data.user);
+  //         setUserData({
+  //           id:userid,
+  //           user:loggeduser.data.user
+  //         })}
+  //    // console.log(userData);
+  // }
 
 
- useEffect(()=>{
-  
+  useEffect(() => {
+
     // loggeduserdata()
-  },[])
-  
+  }, [])
+
 
 
   return (
     <div className="App">
       <BrowserRouter basename='/' >
-      {/* <UserContext.Provider value={{userData,setUserData}}> */}
-      <Routes>
-      
-        {/* <Route path='login' element={<><Loginheader/><Employerlogin /> <Loginfooter/></>} /> */}
-        {/* <Videopage/> */}
+        {/* <UserContext.Provider value={{userData,setUserData}}> */}
+        <Routes>
 
-          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Reviews /> <Forms /> <Footer /> </>} />
+          {/* <Route path='login' element={<><Loginheader/><Employerlogin /> <Loginfooter/></>} /> */}
+          {/* <Videopage/> */}
 
-          <Route path='/vacancies' element={<><Loginheader /><Showvacancies/> </>} />
-          <Route path="applyvacancy/:id" element={<><Loginheader /> <Applyvacancy/></>} />
+          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Forms /> <Footer /> </>} />
 
-        {/* <Route path='register' element={<><Loginheader/><Register /> <Loginfooter/></>} /> */}
+          <Route
+            path="/vacancies"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <Showvacancies />
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+          
+          <Route path="applyvacancy/:id" element={<> <Header /> <Applyvacancy /><Footer /></>} />
 
-        {/* {
+          {/* <Route path='register' element={<><Loginheader/><Register /> <Loginfooter/></>} /> */}
+
+          {/* {
           userid ?
 
         <Route path='postajob' element={<><Loginheader/> <Jobpost/> <Loginfooter/></>}/>
@@ -116,16 +126,16 @@ function App() {
         :
         <Route path='applyjob' element={<><Cheader/><Clogin/><Cfooter/></>} />
         } */}
-        
 
 
-          
-          
 
-        
 
-      </Routes>
-      {/* </UserContext.Provider> */}
+
+
+
+
+        </Routes>
+        {/* </UserContext.Provider> */}
       </BrowserRouter>
 
 
