@@ -53,7 +53,7 @@ function Header() {
           </Link>
         </li>
         <li className="nav__item">
-          <a href="/#contact"  className="nav__link">
+          <a href="/contactus"  className="nav__link">
             Contact
           </a>
         </li>

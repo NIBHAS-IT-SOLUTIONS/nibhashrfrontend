@@ -25,6 +25,7 @@ height: 10px;
 .since{
     color: #fff;
     font-size: 3rem;
+    text-align: left;
     padding-top: 5rem;
 }
 .carcaption .so{
@@ -36,11 +37,11 @@ height: 10px;
 }
 .carcaption .you{
     font-family: 'Anton', sans-serif;
-    color: #b61bb3;
+    color: #ffffff;
 }
 .carcaption .dream{
     font-family: 'Anton', sans-serif;
-    color: #dbdb10;
+    color: #fffffc;
 }
 /* @media (min-width:360px) and (max-width:719px){
 

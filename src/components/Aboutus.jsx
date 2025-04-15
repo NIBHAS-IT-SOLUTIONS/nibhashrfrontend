@@ -16,12 +16,15 @@ function Aboutus() {
 
                         <br />
                         <h3>Welcome to <strong>Nibhas HRD Solutions</strong></h3>,<br /> <br /> 
-                         <h5> As a leading placement agency,  we take pride in revolutionizing the hiring experience for both employers and job seekers.We have helped many professionals to have a successful career
-                            in Healthcare, Engineering Information Technology, Finance, Accounting, Construction, Hospitality, 
-                              Administration, Management, Sales & Marketing, Marketing Research and many more </h5>
+                         <h5> Nibhas HRD Solutions is a Job Consultancy and Recruitment Agency having specialization in 
+                            doctors placement. We provide end to end all hiring solutions. We bridge the gap between the 
+                            leading companies and the Career Aspirants. We act as a link between Companies that offer Jobs 
+                            in various areas and the Job seekers. We also act as a guide to the Job searchers and help them
+                             with their Career prospects.We have helped many professionals to have a successful career in 
+                             Healthcare, Engineering Information Technology, Finance, Accounting, Construction, Hospitality, Administration, 
+                             Management, Sales & Marketing, Marketing Research and many more.</h5>
                               <br />
-                              <h5> And our team consists of seasoned web developers and digital marketing specialists who stay ahead of industry trends and technologies.
-                        </h5>
+                              
                     </div>
                 </div>
 

@@ -59,13 +59,15 @@
         width: 460px;
         height: 700px;
         padding: 0;
+        
     }
 
-    .about-content h4 {
-        font-size: 16px;
+    .about-content h5 {
+        font-size: 18px;
     }
 .about-container {
     padding: 0;
+    text-align: justify;
 }
 }
 

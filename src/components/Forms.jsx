@@ -108,7 +108,7 @@ function Forms() {
             name="message"
             placeholder="Message"
             rows="4"
-            cols="40"
+            cols="60"
             value={data.message}
             onChange={handleInputChange}
           />

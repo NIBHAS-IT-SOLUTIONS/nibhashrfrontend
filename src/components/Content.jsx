@@ -34,7 +34,7 @@ function Content() {
               <span className='so'> SO MANY </span><br />
               DOCTORS <span className='so'>ALL OVER KERALA</span>
             </h1>
-            <p className='since'>SINCE 2017</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -45,7 +45,7 @@ function Content() {
           />
           <Carousel.Caption>
             <h2 className='carcaption'>'SAY GOODBYE TO UNEMPLOYMENT' <br /> WE CAN MAKE <span className='you'>YOUR FUTURE</span> BETTER </h2>
-            <p className='since'>AS A PLACEMENT AGENCY</p>
+           
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -56,9 +56,7 @@ function Content() {
           />
           <Carousel.Caption>
             <h2 className='carcaption'>'ACHIEVE YOUR <span className='dream'>DREAMS</span> WITH US'</h2>
-            <p className='since'>
-             NIBHAS IT SOLUTIONS
-            </p>
+           
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

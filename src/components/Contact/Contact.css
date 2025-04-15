@@ -1,0 +1,28 @@
+.bg-gradient-bar {
+    height: 6px;
+    background: linear-gradient(to right, #00b894 33%, #0984e3 33%, #6c5ce7 66%);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .contact-section .card {
+    border-radius: 0.5rem;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 1200px; /* Wider container */
+    padding: 0 20px;
+  }
+  
+  .contact-box {
+    flex: 1;
+    min-width: 45%; /* Make each box take more horizontal space */
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  

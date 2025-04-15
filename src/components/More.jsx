@@ -18,7 +18,10 @@ function More() {
         <div className="card-content">
             <h3>PLACEMENT FOR DOCTORS</h3>
             <br />
-            <h4>Our team comprises experts with an in-depth understanding of the medical field. We specialize in placing doctors, surgeons, and medical professionals in roles that align with their skills and aspirations.</h4>
+            <h4>Our team comprises experts with an in-depth understanding of the medical field. We specialize in placing doctors, surgeons, 
+                and medical professionals in roles that align with their skills and aspirations.</h4>
+
+                <a href='/Doctorplacements'><button type="button" class="btn btn-success">Read More</button></a>
         </div>
     </div>
 
@@ -27,7 +30,9 @@ function More() {
         <div className="card-content">
             <h3>PLACEMENT FOR JOB SEEKERS</h3>
             <br />
-            <h4>We understand that each career path is unique. Our expert consultants take the time to understand your aspirations, skills, and preferences to tailor our services to your individual needs. </h4>
+            <h4>We understand that each career path is unique. Our expert consultants take the time to understand your aspirations, 
+                skills, and preferences to tailor our services to your individual needs. </h4>
+                <a href='/placements-for-jobseekers'><button type="button" class="btn btn-success">Read More</button></a>
         </div>
     </div>
 

@@ -24,6 +24,11 @@ import Capply from './candidatecomp/Capply';
 import { baseURL } from './constants/constants';
 import Showvacancies from './vacancies/Showvacancies/Showvacancies';
 import Applyvacancy from './vacancies/Applyvacancy/Applyvacancy';
+import Doctorservice from './components/Doctorservice/Doctorservice';
+import Contact from './components/Contact/Contact';
+import Jobseekers from './components/Jobseekers/Jobseekers';
+
+
 
 
 //import Chome from './candidatecomp/chome';
@@ -63,11 +68,9 @@ function App() {
   //    // console.log(userData);
   // }
 
-
   useEffect(() => {
-
-    // loggeduserdata()
-  }, [])
+   
+  }, []);
 
 
 
@@ -89,6 +92,42 @@ function App() {
                 <Header />
                 <main className="main-content">
                   <Showvacancies />
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+           <Route
+            path="/Doctorplacements"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <Doctorservice/>
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/placements-for-jobseekers"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <Jobseekers/>
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/contactus"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <Forms/>
                 </main>
                 <Footer />
               </div>
