@@ -55,14 +55,14 @@
   
   input,
   textarea {
-    width: 100%;
+    width: 140%;
     border-radius: 8px;
     border: none;
     font-size: 1.5rem;
   }
   
   textarea {
-    resize: vertical;
+    resize: horizontal;
   }
   
   button {
@@ -184,6 +184,12 @@
     }
     .message-box textarea {
       font-size: 1rem;
-      width: 160%;
+      width: 140%;
+    }
+  }
+  @media (min-width: 1600px){
+    .message-box textarea {
+      font-size: 1.5rem;
+      width: 100%;
     }
   }

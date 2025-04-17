@@ -114,7 +114,7 @@ function Jobseekers() {
             <div key={idx} className="col-12 col-sm-6 col-md-4 mb-3">
               <div className="job-box d-flex align-items-center shadow-sm rounded-3 p-3">
                 <CheckCircleFill className="text-primary me-2" size={18} />
-                <span className="job-name">{job.trim()}</span>
+                <span className="job-name">&nbsp;&nbsp;{job.trim()}</span>
               </div>
             </div>
           ))}

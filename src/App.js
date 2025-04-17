@@ -27,6 +27,11 @@ import Applyvacancy from './vacancies/Applyvacancy/Applyvacancy';
 import Doctorservice from './components/Doctorservice/Doctorservice';
 import Contact from './components/Contact/Contact';
 import Jobseekers from './components/Jobseekers/Jobseekers';
+import WhatsAppWidget from './components/WhatsAppWidget';
+import PhoneAuth from './Phoneauth/PhoneAuth';
+
+
+
 
 
 
@@ -83,7 +88,7 @@ function App() {
           {/* <Route path='login' element={<><Loginheader/><Employerlogin /> <Loginfooter/></>} /> */}
           {/* <Videopage/> */}
 
-          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Forms /> <Footer /> </>} />
+          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Forms /> <WhatsAppWidget/> <Footer /> </>} />
 
           <Route
             path="/vacancies"
@@ -128,6 +133,18 @@ function App() {
                 <Header />
                 <main className="main-content">
                   <Forms/>
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+           <Route
+            path="/verify"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <PhoneAuth/>
                 </main>
                 <Footer />
               </div>
