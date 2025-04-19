@@ -55,7 +55,7 @@
   
   input,
   textarea {
-    width: 140%;
+    width: 100%;
     border-radius: 8px;
     border: none;
     font-size: 1.5rem;
