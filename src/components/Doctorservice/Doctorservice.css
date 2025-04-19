@@ -14,7 +14,96 @@ section{
     opacity: 0.5; /* Adjust as needed */
   }
 
-
+  .decorated-image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .top-left-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #0d6efd; /* Bootstrap blue */
+    border-bottom-right-radius: 25px;
+    z-index: 1;
+  }
+  
+  .bottom-right-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fcbf00; /* Yellow-orange */
+    border-top-left-radius: 25px;
+    z-index: 1;
+  }
+  
+  .custom-bullet-list {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .custom-bullet-list li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+    color: #5a5a5a;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .custom-bullet-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff4d29; /* red dot */
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  
+  
+  .dot-pattern {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 6px);
+    gap: 4px;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .dot-pattern::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    display: block;
+    border-radius: 50%;
+  }
+  
+  .dot-pattern > * {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .top-right-dots {
+    top: 0;
+    right: 0;
+    transform: translate(20%, -20%);
+    background-color: transparent;
+  }
+  
+  .bottom-left-dots {
+    bottom: 0;
+    left: 0;
+    transform: translate(-20%, 20%);
+    background-color: transparent;
+  }
+  
 @media (max-width: 719px) {
     .carousel-item img {
       height: 40vh !important;

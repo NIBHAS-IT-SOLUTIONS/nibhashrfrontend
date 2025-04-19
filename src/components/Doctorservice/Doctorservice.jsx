@@ -1,9 +1,12 @@
 import React from 'react'
 import './Doctorservice.css'
 import Carousel from 'react-bootstrap/Carousel';
+import doctor3 from '../../images/medic-man-shaking-hand-colleague.jpg'
 import doctorimage from '../../images/doctor.jpg'
 import doctorimage2 from '../../images/doctors-day-handsome-brunette-cute-guy-medical-gown-smiling-showing-good-gesture.jpg'
+import doctors from '../../images/portrait-smiling-young-doctors-standing-together-portrait-medical-staff-inside-modern-hospital-smiling-camera.jpg'
 import { FaCheckCircle,FaUserMd, FaClock, FaFileContract, FaUsers, FaStar } from "react-icons/fa";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 
 
@@ -89,7 +92,7 @@ function Doctorservice() {
 
     <div className="container my-5 py-4 px-3 px-md-5">
       <div className="row align-items-center">
-        {/* Text Content */}
+       
         <div className="col-lg-7 mb-4 mb-lg-0">
           <h2 className='text-dark fw-bold display-3' >
             Nibhas HRD Solutions
@@ -99,28 +102,120 @@ function Doctorservice() {
             Doctors Job Placement Agency – Healthcare Sector Recruitment Experts
           </h5><br />
           <p style={{ textAlign: "justify" }}>
-            We are a doctors job placement agency that deals with all the necessities related to the Healthcare sector. Our mission is to connect organizations with talented professionals who bring expertise and dedication to their roles.
-          </p>
+          We are a trusted <b>doctors job placement agency</b> that caters to all recruitment needs within the healthcare sector. 
+          Our mission is to connect hospitals, clinics, and healthcare 
+          organizations with talented and dedicated medical professionals who bring both expertise and compassion to their roles.</p>
           <p style={{ textAlign: "justify" }}>
-            From understanding client requirements to ensuring the successful onboarding of candidates, we provide end-to-end recruitment services.
-          </p>
-          <p style={{ textAlign: "justify" }}>
-            We offer comprehensive doctor placement services and support to hospitals and provide them reliable, experienced medical professionals.
-          </p>
+          From thoroughly understanding client requirements to facilitating the successful onboarding of candidates, 
+          we provide <b>end-to-end recruitment services</b> designed to simplify and streamline the hiring process. 
+          We ensure that both clients and candidates experience a smooth and efficient placement journey</p>
+
+          
         </div>
 
-        {/* Image */}
+      
         <div className="col-lg-5 text-center">
           <img
             src={doctorimage2}
             alt="Doctor"
             className="img-fluid rounded"
-            style={{ maxHeight: "500px", objectFit: "contain" }}
+            style={{  maxHeight: "500px", objectFit: "contain",marginTop:"50px" }}
           />
         </div>
       </div>
     </div>
     <br /><br />
+    <section className="py-5 bg-white">
+      <Container>
+       
+        <Row className="align-items-center">
+        
+          <Col
+            md={6}
+            className="position-relative d-flex justify-content-center mb-4 mb-md-0"
+          >
+            <div className="decorated-image-wrapper">
+              <img
+                src={doctors} 
+                alt="Doctors"
+                className="img-fluid rounded shadow"
+              />
+             
+              <div className="top-left-corner" />
+              <div className="bottom-right-corner" />
+              <div className="dot-pattern top-right-dots" />
+              <div className="dot-pattern bottom-left-dots" />
+            </div>
+          </Col>
+
+      
+          <Col md={6}>
+            <p className=" mb-4" style={{ textAlign: "justify" }}>
+            With a strong reputation as a <b>doctors recruitment agency</b>, we help healthcare institutions 
+            fill critical positions with speed and precision. Whether you’re searching to fill a <b>doctor 
+            vacancy in Thrissur</b> or in any other region, our extensive network of professionals is ready to meet your needs.
+            <br /><br />
+            As a dedicated <b>medical staffing recruitment agency</b>, we are committed to building 
+            lasting partnerships by providing consistent, high-quality staffing solutions that align 
+            with the unique goals of each healthcare organization.
+            <br /><br />
+            As a specialized <b>doctor placement agency</b>, we offer comprehensive <b>doctors placement services</b> and ongoing support 
+            to hospitals across India. We pride ourselves on delivering highly qualified, 
+            experienced, and reliable doctors who meet the highest standards of care and professionalism.
+
+            </p>
+           
+          </Col>
+        </Row>
+      </Container>
+    </section>
+<br /><br /><br />
+    <section className="py-5 bg-light">
+      <Container>
+        <br />
+        <h2 className="text-center text-dark fw-bold mb-5 display-4">Our Core Services Include</h2>
+        <br />
+        <Row className="text-left">
+          {/* Text Column */}
+          <Col md={7}>
+          <br />
+            <ul className="custom-bullet-list">
+              <li> Full-service <b>doctor job placement solutions</b> for healthcare providers.
+              </li>
+              <li>Custom recruitment strategies based on specific hospital or clinic requirements.
+              </li>
+              <li>
+              Prompt and professional handling of <b>doctor vacancies</b> across specialties and locations.
+
+              </li>
+              <li>
+              Reliable sourcing for <b>doctor vacancy in Thrissur</b> and nationwide.
+
+              </li>
+              <li>Long-term staffing support through our vast pool of skilled medical professionals.
+              </li>
+             
+            </ul>
+            <br />
+            <p className="text-muted">
+              There are various roles and specialties that a hospital usually hires for.
+              As one of the best doctor placement agencies in India, we cover a range of specialties.
+              Some of them are:
+            </p>
+          </Col>
+
+          {/* Image Column */}
+          <Col md={5} className="text-center mt-4 mt-md-0">
+            <img
+              src={doctor3}
+              alt="Medical team"
+              className="img-fluid rounded shadow-sm"
+            />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
 
     <div className="container my-5 py-4 px-3 px-md-5 text-center">
       <h3 className="fw-bold display-3 ">Our Doctor Placement Services</h3>
