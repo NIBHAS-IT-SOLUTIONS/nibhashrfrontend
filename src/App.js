@@ -29,6 +29,7 @@ import Contact from './components/Contact/Contact';
 import Jobseekers from './components/Jobseekers/Jobseekers';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import PhoneAuth from './Phoneauth/PhoneAuth';
+import CandidateCorner from './CandidateCorner/CandidateCorner';
 
 
 
@@ -145,6 +146,18 @@ function App() {
                 <Header />
                 <main className="main-content">
                   <PhoneAuth/>
+                </main>
+                <Footer />
+              </div>
+            }
+          />
+            <Route
+            path="/candidatecorner"
+            element={
+              <div className="page-container">
+                <Header />
+                <main className="main-content">
+                  <CandidateCorner/>
                 </main>
                 <Footer />
               </div>

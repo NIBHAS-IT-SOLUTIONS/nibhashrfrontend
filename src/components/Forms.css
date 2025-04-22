@@ -45,12 +45,13 @@
   
   .form h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   
   .input-container {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    height: 60px;
   }
   
   input,

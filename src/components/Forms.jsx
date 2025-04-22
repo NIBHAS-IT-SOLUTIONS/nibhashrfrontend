@@ -64,7 +64,7 @@ function Forms() {
   </div>
 
   <div className="child2">
-    <div className="form">
+    {/* <div className="form"> */}
       <form ref={form} onSubmit={sendEmail}>
         <h1>We'd Love to Hear From You</h1>
 
@@ -119,7 +119,7 @@ function Forms() {
       </form>
     </div>
   </div>
-</div>
+{/* </div> */}
 
 
     </>

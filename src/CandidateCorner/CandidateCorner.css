@@ -1,0 +1,70 @@
+.hero-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-section h1,
+.hero-section h2 {
+  font-size: 6rem !important;
+}
+
+.hero-section .btn {
+  font-size: 1.5rem !important;
+ 
+ 
+}
+
+
+.form-card {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.386);
+  border-radius: 50px;
+ 
+}
+
+.form-control {
+  border-radius: '1.5rem';
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  color: #0a0a23;
+}
+
+.btn-outline-primary {
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-width: 2px;
+  color: #0dfd31;
+  
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.toggle-group .btn {
+  border-radius: 30px !important;
+}
+.form-wrapper {
+  background: #0a0a23; /* Optional if used standalone */
+  min-height: 110vh;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-section h1,
+  .hero-section h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-section .btn {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.25rem !important;
+  }
+}

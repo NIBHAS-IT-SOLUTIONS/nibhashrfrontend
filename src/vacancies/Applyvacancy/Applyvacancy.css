@@ -28,7 +28,7 @@ th, td {
     background-color: #1A8DB0;
     width: 40%;
     display: inline-block;
-    padding: 28rem 20rem;
+    padding: 10rem 10rem;
     height: 620px;
     vertical-align: middle;
     border-radius: 0px;
@@ -120,10 +120,16 @@ th, td {
     }
     .child2 {
         align-items: center;
-        height: 600px;
-        width: 150px;
-       border-radius:  0px 0px 10px 10px;
+        height: 800px;
+        width: 450px;
+        border-radius:  0px 0px 10px 10px;
 
+    }
+    .message-box textarea {
+        padding: .8rem;
+        border-radius: 5px;
+        resize: horizontal;
+        
     }
     .child1{
         align-items: flex-start;
@@ -131,8 +137,8 @@ th, td {
 
     .child1 img {
         border-radius: 10px 10px 0px 0px;
-        margin-left: -31.5%;
-        width: 400px;
+        margin-left: -38%;
+        width: 500px;
         height: 280px;
         object-fit: fill;
     }
@@ -190,10 +196,11 @@ th, td {
   
     .input-container input
     {
-      font-size: 1rem;
+      font-size: 1.5rem;
       width: 100%;
     }
     .message-box textarea {
       font-size: 1rem;
       width: 160%;
+      border-radius: 5px;
     }}
