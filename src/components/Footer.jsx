@@ -43,17 +43,17 @@ function Footer() {
 
 
 
-          <div className='location'>
+          <div className='location' style={{textAlign:'left'}}>
             <ul>
-              <h3>Nibhas HRD Solutions</h3>
+              <h3>Nibhas HRD Solutions Pvt Ltd</h3>
               <li></li>
 
 
 
-              <li><i class="fa-solid fa-location-dot"> </i> Neyyan's Plaza,</li>
-              <li>Opp. Vyabarabhavan,</li>
-              <li>Chandakkunnu, Irinjalakuda,</li>
-              <li>Thrissur, Kerala, 680121</li>
+              <li><i class="fa-solid fa-location-dot"> </i> Marigold Shopping complex</li>
+              <li>Thekkekara Road,</li>
+              <li>Near Metro Health Care , Irinjalakuda</li>
+              <li> Thrissur 680121 </li>
 
 
             </ul>

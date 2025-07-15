@@ -244,7 +244,7 @@ function Showvacancies() {
               })
               :
               <div class="d-flex justify-content-center mx-auto">
-                <h1 class="text-primary">No Vacancies Available</h1>
+                <h1 class="text-primary">Loading Vacancies....</h1>
                 <br /><br /><br />
               </div>
 

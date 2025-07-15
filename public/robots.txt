@@ -1,3 +1,11 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /private/
+Allow: /
+
+# Sitemap location (important for SEO)
+Sitemap: https://www.nibhashr.com/sitemap.xml
+

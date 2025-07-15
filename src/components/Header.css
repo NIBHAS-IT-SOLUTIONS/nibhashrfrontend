@@ -5,12 +5,12 @@ li {
   list-style: none;
 }
 
-a {
+.nav__link {
   text-decoration: none;
   color: #2B53A1;
 }
 
-a:hover {
+.nav__link:hover {
   color: #40409a;
 }
 

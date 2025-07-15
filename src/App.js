@@ -30,6 +30,15 @@ import Jobseekers from './components/Jobseekers/Jobseekers';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import PhoneAuth from './Phoneauth/PhoneAuth';
 import CandidateCorner from './CandidateCorner/CandidateCorner';
+import Home from './Pages/Home';
+import AboutUS from './Pages/AboutUS';
+import Vacancypage from './Pages/Vacancypage';
+import Doctorplacements from './Pages/Doctorplacements';
+import Placementsforjobseekers from './Pages/Placementsforjobseekers';
+import Contactuspage from './Pages/Contactuspage';
+
+import Servicepage from './Pages/Servicepage';
+import Loading from './Utils/Loading';
 
 
 
@@ -74,14 +83,13 @@ function App() {
   //    // console.log(userData);
   // }
 
-  useEffect(() => {
-   
-  }, []);
+ 
 
 
 
   return (
     <div className="App">
+     
       <BrowserRouter basename='/' >
         {/* <UserContext.Provider value={{userData,setUserData}}> */}
         <Routes>
@@ -89,54 +97,42 @@ function App() {
           {/* <Route path='login' element={<><Loginheader/><Employerlogin /> <Loginfooter/></>} /> */}
           {/* <Videopage/> */}
 
-          <Route path='/' element={<><Header /><Content />  <Aboutus /> <More />  <Forms /> <WhatsAppWidget/> <Footer /> </>} />
+          <Route path='/' element={<Home/>} />
 
+          <Route
+            path="/about"
+            element={
+              <AboutUS/>
+            }
+          />
           <Route
             path="/vacancies"
             element={
-              <div className="page-container">
-                <Header />
-                <main className="main-content">
-                  <Showvacancies />
-                </main>
-                <Footer />
-              </div>
+              <Vacancypage/>
             }
           />
            <Route
             path="/Doctorplacements"
             element={
-              <div className="page-container">
-                <Header />
-                <main className="main-content">
-                  <Doctorservice/>
-                </main>
-                <Footer />
-              </div>
+              <Doctorplacements/>
             }
           />
           <Route
             path="/placements-for-jobseekers"
             element={
-              <div className="page-container">
-                <Header />
-                <main className="main-content">
-                  <Jobseekers/>
-                </main>
-                <Footer />
-              </div>
+              <Placementsforjobseekers/>
             }
           />
           <Route
             path="/contactus"
             element={
-              <div className="page-container">
-                <Header />
-                <main className="main-content">
-                  <Forms/>
-                </main>
-                <Footer />
-              </div>
+             <Contactuspage/>
+            }
+          />
+           <Route
+            path="/services"
+            element={
+            <Servicepage/>
             }
           />
            <Route

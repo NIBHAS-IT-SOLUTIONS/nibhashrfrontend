@@ -6,11 +6,12 @@ import Carousel from 'react-bootstrap/Carousel';
 // import Itimage from '../Images/IT WORK.jpg'
 // import Nibhas from '../Images/NIBHAS.png'
 import Carousel1  from '../images/nibhas hr.png';
-
+import { Helmet } from "react-helmet-async";
 
 function Content() {
   return (
     <>
+   
        {/* <Carousel.Item>
           <img style={{ height: '80vh' }}
             className="d-block w-100"
@@ -19,8 +20,6 @@ function Content() {
           />
         </Carousel.Item> */}
       <Carousel data-bs-theme="dark">
-
-  
 
         <Carousel.Item>
           <img style={{ height: '80vh' }}

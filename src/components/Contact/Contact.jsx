@@ -58,7 +58,7 @@ function Contact() {
               <div className="card-body">
                 <h4 className="fw-bold mb-4">Send a Message</h4>
                 <form>
-                  <div className="mb-3">
+                  <div className="mb-3 px-2">
                     <input type="text" className="form-control form-control-lg bg-light" placeholder="Your Name" />
                   </div>
                   <div className="mb-3">

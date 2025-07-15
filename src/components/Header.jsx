@@ -25,27 +25,27 @@ function Header() {
     return (
         <>
           <nav className="nav" style={{backgroundColor:'white',color:"#2B53A1"}}>
-      <a href="/" style={{Color:'#2B53A1'}} className="nav__brand">
+      <Link to="/" style={{Color:'#2B53A1'}} className="nav__brand">
       <img src={nibhaslogo} alt="" width="100"/>
         Nibhas HRD Solutions
-      </a>
+      </Link>
       
       <ul  style={{Color:'#2B53A1'}} className={active}>
         <li className="nav__item">
-          <a href="/#home"  className="nav__link">
+          <Link to="/"  className="nav__link">
             Home
-          </a>
+          </Link>
         </li>
         
         <li className="nav__item">
-          <a href="/#about" className="nav__link">
+          <Link to="/about" className="nav__link">
             About
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="/#service"  className="nav__link">
+          <Link to="/services"  className="nav__link">
             Services
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
           <Link to='/vacancies'  className="nav__link">
@@ -53,9 +53,9 @@ function Header() {
           </Link>
         </li>
         <li className="nav__item">
-          <a href="/contactus"  className="nav__link">
+          <Link to="/contactus"  className="nav__link">
             Contact
-          </a>
+          </Link>
         </li>
 
         

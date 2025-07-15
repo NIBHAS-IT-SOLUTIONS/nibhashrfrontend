@@ -4,8 +4,13 @@ import { BsPeople, BsCpu } from 'react-icons/bs';
 //import "bootstrap/dist/css/bootstrap.min.css";
 import './CandidateCorner.css'
 function CandidateCorner() {
-  const [hiringFor, setHiringFor] = useState('company');
+ 
   const [otpSent, setOtpSent] = useState(false);
+  const [fullName, setFullName] = useState('');
+const [email, setEmail] = useState('');
+const [mobile, setMobile] = useState('');
+const [otp, setOtp] = useState('');
+const [resumeFile, setResumeFile] = useState(null);
   const [workStatus, setWorkStatus] = useState('');
   const [resumeError, setResumeError] = useState('');
 
@@ -21,6 +26,28 @@ function CandidateCorner() {
       setResumeError('');
     }
   };
+  const handlesubmit=(e)=>{
+    e.preventDefault();
+
+    const formData = {
+      fullName,
+      email,
+      mobile,
+      otp,
+      workStatus,
+      resumeFile,
+    };
+  
+    console.log('Form Data:', formData);
+  
+    // Example: Send it to API
+    // const form = new FormData();
+    // form.append('resume', resumeFile);
+    // form.append('fullName', fullName);
+    // ... send with fetch/Axios
+  
+    alert('Form submitted successfully!');
+  }
   return (
     <div
   className="hero-section text-white d-flex align-items-center py-5"
@@ -31,7 +58,7 @@ function CandidateCorner() {
   }}
 >
   <Container>
-    <Row className="align-items-center flex-column-reverse flex-md-row">
+  <Row className="align-items-center flex-column flex-md-row">
       {/* Left Section */}
       <Col md={6} className="text-center text-md-start mt-4 mt-md-0">
         <div>
@@ -39,12 +66,9 @@ function CandidateCorner() {
             Talent Decoded
           </h1>
           <h2 className="fw-bold lh-sm fs-3 fs-md-1">
-            Decode India’s largest talent pool
+            Decode India's largest talent pool
           </h2>
-          <p className="mt-3 fw-semibold">
-            Acts as a link between various jobs and the jobseekers
-          </p>
-          <p className="fw-semibold text-primary-emphasis">Nibhas HRD Solutions</p>
+          <br /><br />
           <Button
             variant="primary"
             className="rounded-pill px-4 py-3 mt-3 fw-bold"
@@ -53,7 +77,7 @@ function CandidateCorner() {
           </Button>
         </div>
       </Col>
-
+<br />
       {/* Right Section: Form */}
       <Col md={6} className="mb-5 mb-md-0">
         <div
@@ -64,31 +88,32 @@ function CandidateCorner() {
           }}
         >
           <h4 className="mb-4 text-center text-md-start">Register your details</h4>
-          <Form>
+          <Form onSubmit={(e)=>{handlesubmit(e)}}>
             {/* Full Name */}
             <Form.Group controlId="fullName" className="mb-3">
               <Form.Label>Full Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your full name" />
+              <Form.Control type="text" placeholder="Enter your full name" onChange={(e) => setFullName(e.target.value)} required/>
             </Form.Group>
 
             {/* Email */}
             <Form.Group controlId="email" className="mb-3">
               <Form.Label>Email ID</Form.Label>
-              <Form.Control type="email" placeholder="Enter your email" />
+              <Form.Control type="email" placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required />
               <Form.Text className="text-muted">
                 We'll send relevant jobs and updates to this email.
               </Form.Text>
             </Form.Group>
 
             {/* Mobile + Verify */}
-            <Form.Group controlId="mobile" className="mb-3">
+            <Form.Group controlId="mobile" className="mb-1">
               <Form.Label>Mobile Number</Form.Label>
               <Row className="g-2">
-                <Col xs={8}>
-                  <Form.Control type="tel" placeholder="Enter mobile number" />
+                <Col xs={7}>
+                  <Form.Control type="tel" placeholder="Enter mobile number" onChange={(e) => setMobile(e.target.value)} required />
                 </Col>
-                <Col xs={4}>
+                <Col xs={5}>
                   <Button
+                  style={{marginTop:"0px"}}
                     variant="primary"
                     className="w-100"
                     onClick={() => setOtpSent(true)}
@@ -97,15 +122,40 @@ function CandidateCorner() {
                   </Button>
                 </Col>
               </Row>
-            </Form.Group>
-
-            {/* OTP */}
-            {otpSent && (
+              <br />
+              {otpSent && (
+                   <Form.Group controlId="otp" className="mb-3">
+              <Row className="g-0">
+                <Col xs={7}>
+             
+                
+                <Form.Control type="text" placeholder="Enter OTP" />
+              
+                </Col>
+                <Col xs={5}>
+                  <Button
+                   style={{marginTop:"0px"}}
+                    variant="primary"
+                    className="w-100"
+                    onClick={() => setOtpSent(true)}
+                  >
+                   Verify OTP
+                  </Button>
+                  
+                </Col>
+              </Row>
+              </Form.Group>
+              )}
+                {/* OTP */}
+            {/* {otpSent && (
               <Form.Group controlId="otp" className="mb-3">
                 <Form.Label>Enter OTP</Form.Label>
                 <Form.Control type="text" placeholder="Enter OTP" />
               </Form.Group>
-            )}
+            )} */}
+            </Form.Group>
+
+          
 
             {/* Work Status */}
             <Form.Group className="mb-4">
@@ -140,9 +190,12 @@ function CandidateCorner() {
               <Form.Control
                 type="file"
                 accept=".doc,.docx,.pdf,.rtf"
-                onChange={handleResumeUpload}
+                onChange={(e) => {
+                  setResumeFile(e.target.files[0]);
+                  handleResumeUpload(e);
+                }}
                 className="form-control"
-                style={{ padding: "0.25rem", borderRadius: "0.5rem" }}
+                style={{ padding: "0.1rem", borderRadius: "0.5rem" }}
               />
               <Form.Text className="text-muted">
                 DOC, DOCX, PDF, RTF | Max: 2 MB
